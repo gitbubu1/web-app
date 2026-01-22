@@ -65,11 +65,11 @@ section.allElems {
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 40px;
+  position: absolute;
 }
 
 .elem {
   background-color: var(--tri2);
-
   height: 400px;
   width: 300px;
   font-size: 30px;
@@ -77,6 +77,8 @@ section.allElems {
   overflow: hidden;
   position: relative;
   transition: all ease 0.2s;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 255)0.2  ;
 }
 
 .elem img {
@@ -94,5 +96,29 @@ section.allElems {
 }
 
 .elem:active {
+  scale: 0.97;
+}
+
+.fullElem {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  padding: 40px;
+  font-size: 60px;
+  display: none;
+  position: absolute;
+}
+
+.back {
+  position: absolute;
+  right: 5%;
+  background-color: red;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+
+.back:active{
   scale: 0.97;
 }
